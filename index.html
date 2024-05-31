@@ -1,7 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#about-vr" class="nav-item">About VR</a>
+            <a href="#about-xbox-ps" class="nav-item">About XBOX, PS</a>
+            <a href="#prices" class="nav-item">Prices</a>
+            <a href="#rules" class="nav-item">Rules</a>
+            <a href="#get-started" class="button">Get Started Now</a>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="content">
+            <h1 class="gaming-consoles">Gaming consoles</h1>
+            <h2 class="try-it-rent-it">Try it, Rent it</h2>
+            <h2 class="save-50">Save 50$</h2>
+            <p class="description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
+        </div>
+        <div class="side-image">
+            <div class="boy-container">
+                <img src="img/boy.png" alt="Boy" class="boy-image">
+                <a href="#cont"><img src="img/gpad.png" alt="Gamepad" class="gpad-image"></a>
+                <a href="#ds4"><img src="img/vr.png" alt="VR" class="vr-image"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-vr" class="section">
+        <div class="about-vr-container">
+            <div class="about-vr-text">
+                <h1>About VR Glasses</h1>
+                <h2>The New VR Glasses Series</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
+                <a href="#prices" class="button-ds4">Get Started Now</a>
+            </div>
+            <img src="img/aboutvr.png" alt="About VR Image" class="about-vr-image">
+        </div>
+    </section>
+
+    <section id="about-xbox-ps" class="section">
+        <div class="about-xbox-ps-container">
+            <img src="img/contr.png" alt="Contr Image" class="contr-image">
+            <div class="about-xbox-ps-text">
+                <h1>About XBOX, PS</h1>
+                <h2>The New Xbox, PS Series</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as opposed.</p>
+              <a href="#prices" class="button-cont">Get Started Now</a>
+            </div>
+        </div>
+
+    </section id="prices" class="section">
+        <!-- Заголовок с текстом о ценах -->
+     <div class="pricing-text">Our Pricing</div>
+        
+        <!-- Заголовок с предложением выбрать план -->
+     <div class="plan-text">Choose Your Plan</div>
+
+        <div class="rectangles">
+            <!-- Первый тарифный план -->
+            <div class="rectangle">
+                <div class="plan-title">Basic Plan</div>
+                <div class="plan-price">$50</div>
+                <ul class="plan-features">
+                    <!-- Перечень особенностей базового плана -->
+                    <li><span class="checkmark">✔</span> 10 users included</li>
+                    <li><span class="checkmark">✔</span> 2 GB of storage</li>
+                    <li><span class="checkmark">✔</span> Email support</li>
+                    <li><span class="checkmark">✔</span> Help center access</li>
+                </ul>
+                <!-- Кнопка выбора базового плана -->
+                <a href="payment.html" class="button plan-button">Select This Plan</a>
+            </div>
+            
+            <!-- Второй тарифный план -->
+            <div class="rectangle">
+                <div class="plan-title">Standard Plan</div>
+                <div class="plan-price">$95</div>
+                <ul class="plan-features">
+                    <!-- Перечень особенностей стандартного плана -->
+                    <li><span class="checkmark">✔</span> 25 users included</li>
+                    <li><span class="checkmark">✔</span> 5 GB of storage</li>
+                    <li><span class="checkmark">✔</span> Email support</li>
+                    <li><span class="checkmark">✔</span> Help center access</li>
+                    <li><span class="checkmark">✔</span> Access to a special store</li>
+                </ul>
+                <!-- Кнопка выбора стандартного плана -->
+                <a href="payment.html" class="button plan-button">Select This Plan</a>
+            </div>
+            
+            <!-- Третий тарифный план -->
+            <div class="rectangle">
+                <div class="plan-title">Premium Plan</div>
+                <div class="plan-price">$120</div>
+                <ul class="plan-features">
+                    <!-- Перечень особенностей премиум плана -->
+                    <li><span class="checkmark">✔</span> 50 users included</li>
+                    <li><span class="checkmark">✔</span> 10 GB of storage</li>
+                    <li><span class="checkmark">✔</span> Email support</li>
+                    <li><span class="checkmark">✔</span> Help center access</li>
+                    <li><span class="checkmark">✔</span> Access to a special store</li>
+                    <li><span class="checkmark">✔</span> Early access to services</li>
+                </ul>
+                <!-- Кнопка выбора премиум плана -->
+                <a href="payment.html" class="button plan-button">Select This Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Логотип в футере -->
+            <img src="img/logo.png" alt="Logo" class="footer-logo">
+            <!-- Текст авторских прав -->
+            <div class="footer-text">Copyright © 2022 HEALAS.LT. All Rights Reserved.</div>
+            <!-- Социальные иконки -->
+            <div class="social-icons">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="social-icon">
+                    <img src="img/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="social-icon">
+                    <img src="img/tw.png" alt="Twitter">
+                </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" class="social-icon">
+                    <img src="img/inst.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
