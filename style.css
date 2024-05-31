@@ -368,7 +368,7 @@ nav {
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
-    margin-top: 150px;
+    margin-top: 25px; /* Уменьшено еще на 75px */
 }
 
 /* Стили для блока с тарифом */
@@ -454,6 +454,30 @@ nav {
     text-align: center;
     cursor: pointer;
     margin-top: auto;
+}
+
+/* Стили для объединенного заголовка "Our Pricing Choose Your Plan" */
+.pricing-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pricing-header h1 {
+    color: rgb(68, 99, 129);
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 40px 0 0 0; 
+}
+
+.pricing-header h2 {
+    color: rgb(235, 131, 130);
+    font-family: Arial;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    margin: 30px 0 0 0; 
 }
 
 /* Стили для подвала */
