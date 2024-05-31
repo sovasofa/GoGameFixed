@@ -1,0 +1,520 @@
+/* Основные стили для тела страницы */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EAAC8B;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Задаем минимальную высоту равную высоте видимой области окна браузера */
+}
+
+/* Стили для шапки страницы */
+header {
+    width: 100%;
+    height: 78px;
+    background-color: #EAAC8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* Стили для секций */
+.section {
+    flex: 1; /* Занимает все оставшееся пространство после хедера и футера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 78px; /* Отступ сверху для учета фиксированной шапки */
+    box-sizing: border-box;
+}
+
+/* Стили для логотипа */
+.logo {
+    width: 286.54px;
+    height: 78px;
+    margin-right: 20px;
+}
+
+/* Стили для навигационного меню */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для пунктов навигации */
+.nav-item {
+    color: rgb(68, 99, 129);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+/* Стили для кнопки */
+.button {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(136.59deg, rgb(68, 153, 217) 17.464%, rgb(115, 103, 190) 87.766%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Стили для секций */
+.section {
+    padding-top: 100px; /* отступ сверху для учета фиксированной шапки */
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Стили для секции Главная */
+#home {
+    background-color: #EAAC8B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Стили для основного контента */
+.content {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Стили для заголовков */
+.gaming-consoles,
+.try-it-rent-it,
+.save-50 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Стили для заголовка "Gaming consoles" */
+.gaming-consoles {
+    font-size: 44px;
+    color: #355070;
+}
+
+/* Стили для заголовка "Try it, Rent it" */
+.try-it-rent-it {
+    font-size: 56px;
+    color: #E56B6F;
+}
+
+/* Стили для заголовка "Save 50$" */
+.save-50 {
+    font-size: 56px;
+    color: #355070;
+}
+
+/* Стили для описания */
+.description {
+    font-size: 24px;
+    color: #6D597A;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Стили для бокового изображения */
+.side-image {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Стили для контейнера с изображением мальчика */
+.boy-container {
+    position: relative;
+}
+
+/* Стили для изображения мальчика */
+.boy-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Стили для изображения VR */
+.vr-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 20%;
+}
+
+/* Стили для изображения контроллера */
+.gpad-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 20%; 
+}
+
+/* Стили для секции About VR Glasses */
+#about-vr {
+    background-color: #FFC5B3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Стили для контейнера About VR Glasses */
+.about-vr-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Стили для текста "About VR Glasses" */
+.about-vr-text {
+    width: 40%;
+    color: rgb(68, 99, 129);
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding-right: 100px; /* смещение текста вправо на 100 пикселей */
+}
+
+/* Стили для заголовка "About VR Glasses" */
+.about-vr-text h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+}
+
+/* Стили для заголовка "The New VR Glasses Series" */
+.about-vr-text h2 {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    color: rgb(235, 131, 130);
+    margin: 0;
+}
+
+/* Стили для описания VR очков */
+.about-vr-text p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    color: rgb(130, 111, 140);
+}
+
+/* Стили для кнопки DS4 */
+.button-ds4 {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(136.59deg, rgb(68, 153, 217) 17.464%, rgb(115, 103, 190) 87.766%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стили для изображения About VR */
+.about-vr-image {
+    width: 40%;
+    height: auto;
+}
+
+/* Стили для секции About XBOX, PS */
+#about-xbox-ps {
+    background-color: #FFC5B3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Стили для контейнера About XBOX, PS */
+.about-xbox-ps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Стили для изображения About XBOX, PS */
+.contr-image {
+    width: 40%;
+    height: auto;
+}
+
+/* Стили для текста "About XBOX, PS" */
+.about-xbox-ps-text {
+    width: 40%;
+    color: rgb(68, 99, 129);
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding-left: 100px; /* смещение текста вправо на 100 пикселей */
+}
+
+/* Стили для заголовка "About XBOX, PS" */
+.about-xbox-ps-text h1 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+}
+
+/* Стили для заголовка "The New Xbox, PS Series" */
+.about-xbox-ps-text h2 {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    color: rgb(235, 131, 130);
+    margin: 0;
+}
+
+/* Стили для описания XBOX, PS */
+.about-xbox-ps-text p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    color: rgb(130, 111, 140);
+}
+
+/* Стили для кнопки Get Started */
+.button-cont {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(136.59deg, rgb(68, 153, 217) 17.464%, rgb(115, 103, 190) 87.766%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Стили для текста о ценах */
+.pricing-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(68, 99, 129);
+    font-family: Arial;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* Стили для текста "Choose Your Plan" */
+.plan-text {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(235, 131, 130);
+    font-family: Arial;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+/* Стили для контейнера с тарифами */
+.rectangles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 150px;
+}
+
+/* Стили для блока с тарифом */
+.rectangle {
+    position: relative;
+    width: 360.18px;
+    height: 566px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 50px 0px rgba(132, 148, 205, 0.08);
+    background: rgb(251, 218, 207);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Стили для заголовка тарифа */
+.plan-title {
+    color: rgb(68, 99, 129);
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Стили для цены тарифа */
+.plan-price {
+    color: rgb(235, 131, 130);
+    font-family: Arial;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+}
+
+/* Стили для списка особенностей тарифа */
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Стили для элементов списка особенностей тарифа */
+.plan-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Стили для галочки в списке особенностей */
+.checkmark {
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Стили для кнопки выбора тарифа */
+.plan-button {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(136.59deg, rgb(68, 153, 217) 17.464%, rgb(115, 103, 190) 87.766%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+/* Стили для подвала */
+footer {
+    width: 100%;
+    height: 100px; /* Высота футера */
+    background-color: #EAAC8B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Стили для контента подвала */
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрирование контента по горизонтали */
+}
+
+/* Стили для логотипа в подвале */
+.footer-logo {
+    width: 238.78px;
+    height: 65px;
+}
+
+/* Стили для текста в подвале */
+.footer-text {
+    color: rgb(130, 111, 140);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+
+/* Стили для социальных иконок */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для каждой социальной иконки */
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgb(252, 216, 203);
+    box-shadow: -1px -1px 8px 0px rgba(255, 255, 255, 0.08);
+    margin-left: 10px;
+}
+
+/* Стили для изображения в социальной иконке */
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
