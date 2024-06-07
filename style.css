@@ -1,7 +1,7 @@
 /* Основные стили для тела страницы */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: #EAAC8B;
     overflow-x: hidden;
     display: flex;
@@ -67,7 +67,7 @@ nav {
     align-items: center;
     text-decoration: none;
     color: #FFF;
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 24px;
@@ -96,6 +96,7 @@ nav {
     align-items: center;
     padding: 20px;
 }
+
 
 /* Стили для основного контента */
 .content {
@@ -197,7 +198,7 @@ nav {
 .about-vr-text {
     width: 40%;
     color: rgb(68, 99, 129);
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     padding-right: 100px; /* смещение текста вправо на 100 пикселей */
 }
@@ -238,7 +239,7 @@ nav {
     align-items: center;
     text-decoration: none;
     color: #FFF;
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 24px;
@@ -282,7 +283,7 @@ nav {
 .about-xbox-ps-text {
     width: 40%;
     color: rgb(68, 99, 129);
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     padding-left: 100px; /* смещение текста вправо на 100 пикселей */
 }
@@ -323,7 +324,7 @@ nav {
     align-items: center;
     text-decoration: none;
     color: #FFF;
-    font-family: Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
     font-weight: 500;
     line-height: 24px;
@@ -339,7 +340,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     color: rgb(68, 99, 129);
-    font-family: Arial;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 23px;
     font-weight: 500;
     line-height: 24px;
@@ -354,7 +355,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     color: rgb(235, 131, 130);
-    font-family: Arial;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 68px;
     font-weight: 700;
     line-height: 75px;
@@ -390,7 +391,7 @@ nav {
 /* Стили для заголовка тарифа */
 .plan-title {
     color: rgb(68, 99, 129);
-    font-family: Josefin Sans;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
@@ -402,7 +403,7 @@ nav {
 /* Стили для цены тарифа */
 .plan-price {
     color: rgb(235, 131, 130);
-    font-family: Arial;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 1;
@@ -464,7 +465,7 @@ nav {
 
 .pricing-header h1 {
     color: rgb(68, 99, 129);
-    font-family: Arial;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 23px;
     font-weight: 500;
     line-height: 24px;
@@ -473,7 +474,7 @@ nav {
 
 .pricing-header h2 {
     color: rgb(235, 131, 130);
-    font-family: Arial;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 68px;
     font-weight: 700;
     line-height: 75px;
@@ -541,4 +542,97 @@ footer {
     width: 100%;
     height: 100%;
     border-radius: 20px;
+}
+
+/* Медиа-запрос для разрешения 1920x1080 */
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+    header {
+    width: 100%;
+    height: 78px;
+    background-color: #EAAC8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.section {
+    flex: 1; /* Занимает все оставшееся пространство после хедера и футера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 78px; /* Отступ сверху для учета фиксированной шапки */
+    box-sizing: border-box;
+}
+
+.content {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+}
+
+/* Медиа-запрос для разрешения 1366x768 */
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    header {
+    width: 100%;
+    height: 78px;
+    background-color: #EAAC8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.section {
+    flex: 1; /* Занимает все оставшееся пространство после хедера и футера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 78px; /* Отступ сверху для учета фиксированной шапки */
+    box-sizing: border-box;
+}
+
+.content {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+}
+
+/* Медиа-запрос для разрешения 1440x900 */
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+    header {
+    width: 100%;
+    height: 78px;
+    background-color: #EAAC8B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.section {
+    flex: 1; /* Занимает все оставшееся пространство после хедера и футера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 78px; /* Отступ сверху для учета фиксированной шапки */
+    box-sizing: border-box;
+}
+
+.content {
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+}
 }

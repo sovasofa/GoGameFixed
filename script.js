@@ -1,16 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var buttons = document.querySelectorAll(".button-ds4, .button-cont");
-    buttons.forEach(function(button) {
-        button.addEventListener("click", function(event) {
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    for (const link of links) {
+        link.addEventListener('click', function(event) {
             event.preventDefault();
-            var targetId = this.getAttribute("href");
-            var targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-            }
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
 });
